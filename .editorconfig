@@ -13,3 +13,6 @@ indent_style = space
 
 [*.{md,yml}]
 trim_trailing_whitespace = false
+
+[.ghtoken]
+insert_final_newline = false
