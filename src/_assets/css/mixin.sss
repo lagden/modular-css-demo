@@ -1,0 +1,9 @@
+@import './vars.sss'
+
+@define-mixin mq $min, $max: 0
+	@if $max == 0
+		@media only screen and (min-width: $min)
+			@mixin-content
+	@else
+		@media only screen and (min-width: $min) and (max-width: $max)
+			@mixin-content
