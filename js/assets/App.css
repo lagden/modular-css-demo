@@ -1,0 +1,76 @@
+/* src/_assets/css/composes.sss */
+.mccff070b5_cinza {
+	background-color: hsla(0, 0%, 27%, 0.1)
+}
+
+.mccff070b5_bb {
+	box-sizing: border-box
+}
+
+/* src/_components/Media.svelte */
+.mc6dc1c5d1_media {
+	/* cinza and bb from composes */
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	align-items: flex-start;
+	padding: 1em;
+}
+
+.mc6dc1c5d1_media_figure {
+		margin-right: 1em;
+		border-radius: 50%
+}
+
+.mc6dc1c5d1_media_body {
+		flex: 1;
+}
+
+.mc6dc1c5d1_media_body h2, .mc6dc1c5d1_media_body h5 {
+			margin: 0 0 5px 0;
+			padding: 0
+}
+
+/* src/_components/Card.svelte */
+.mcf6e90df2_card {
+	/* bb from composes */
+	background-color: hsla(0, 0%, 100%, 0.9);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+
+	/* grayzinho from composes @values */
+	box-shadow: 0 0 5px 0px hsla(0, 0%, 27%, 0.1);
+}
+
+.mcf6e90df2_card_img {
+		display: block;
+		width: 100%;
+		height: 100px;
+		border-radius: 10px 10px 0 0;
+		object-fit: cover
+}
+
+/* src/App.svelte */
+.mc271162f5_sample_container {
+		padding: 1em;
+		font-size: 1rem;
+		font-family: "Helvetica Neue", sans-serif;
+		width: 100%;
+		max-width: 1200px;
+		min-width: 360px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 430px) {.mc271162f5_sample_container {
+			grid-template-columns: 1fr 1fr
+	}
+}
+
+@media only screen and (min-width: 840px) {.mc271162f5_sample_container {
+			grid-template-columns: 1fr 1fr 1fr 1fr
+	}
+}
