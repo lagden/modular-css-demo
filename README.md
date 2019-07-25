@@ -13,6 +13,10 @@ It's a demo using:
 - [Postcss with Sugarss](https://github.com/postcss/sugarss)
 - [modular-css](https://m-css.com/)
 
+---
+
+[Click here to see the demo](https://lagden.github.io/modular-css-demo/)
+
 
 ## Usage
 
