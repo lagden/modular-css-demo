@@ -34,11 +34,6 @@ export default {
 		dir: 'public/js',
 		assetFileNames: 'assets/[name][extname]',
 		sourcemap: true
-		// format: 'iife',
-		// file: 'public/demo.js',
-		// name: 'produto',
-		// assetFileNames: 'assets/[name][extname]',
-		// sourcemap: true
 	},
 	plugins: [
 		svelte({
@@ -48,7 +43,7 @@ export default {
 		css({
 			dev: !production,
 			processor,
-			common: 'public/css/common.css',
+			common: 'public/js/assets/common.css',
 			namedExports: true
 		}),
 		resolve({
