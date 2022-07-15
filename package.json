@@ -26,6 +26,6 @@
     "rollup-plugin-svelte": "5.1.0",
     "sirv-cli": "0.4.4",
     "sugarss": "2.0.0",
-    "svelte": "3.6.7"
+    "svelte": "3.49.0"
   }
 }
